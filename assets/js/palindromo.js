@@ -15,8 +15,8 @@ const isPalindrome = (word) => {
   i = 0;
   j = newWord.length - 1;
 
-  while (newWord[i] == newWord[j]) {
-    if (i === j) {
+  while (newWord[i] === newWord[j]) {
+    if (i === j || (i !== j && newWord[i] === newWord[j])) {
       return "Es palindromo";
       break;
     }
